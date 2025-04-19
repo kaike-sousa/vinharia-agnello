@@ -3,10 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinharia Agnello</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/home.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/menu.css">
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Vinharia Agnello</title>
 </head>
 <body>
+    <!-- inicio header -->
+    <header>
+        <div id="navbar">
+        <img src="./src/images/Logo Vinho.png" alt="logo" id="nav_logo">
+                
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#teste">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+            
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        </div>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#teste">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+            
+        </div>
+    </header>
+    <!-- fim header -->
+
+    <!-- inicio main -->
+    <main id="content">
+        <!-- seção home -->
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    A melhor vinharia de
+                    <span>São Paulo</span>
+                </h1>
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum exercitationem cupiditate tenetur est rerum accusantium vel doloremque, placeat voluptatem.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver Cardápio
+                    </a>
+    
+                    <a href="tel:+11959887004" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                            
+                        </button>
+                        (11)959887004
+                    </a>
+                </div>
+    
+                <div class="social-media-buttons">
+                    <a href=""> <!-- link do whats -->
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href=""> <!-- link do instagram -->
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href=""> <!-- link do facebook -->
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/images/vinhos2.png" alt="">
+            </div>
+
+        </section>
+        <!-- fim de seção home -->
+        
+        <!-- seção menu -->
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 id="section-subtitle">Vinhos Brancos</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="'fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/images/vinhobranco2.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Chardonnay
+                    </h3>
+                    
+                    <span class="dish-description">
+                        <p>Vinho branco encorpado, conhecido por sua versatilidade. Pode apresentar sabores amanteigados, baunilha, frutas tropicais e notas de carvalho tostado. Excelente para harmonizar com carnes brancas, massas e queijos suaves.                        </p>
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$450,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="'fa-solid fa-hearts"></i>
+                    </div>
+                    <img src="src/images/vinhobranco3.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Sauvignon Blanc
+                    </h3>
+                    
+                    <span class="dish-description">
+                        <p>Refrescante e aromático, com destaque para frutas cítricas, maracujá, maçã verde e notas herbais. Geralmente seco, é ótimo para dias quentes e combina bem com saladas, peixes e frutos-do-mar.</p>
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$300,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="'fa-solid fa-hearts"></i>
+                    </div>
+                    <img src="src/images/vinhabranco4.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Riesling
+                    </h3>
+                    
+                    <span class="dish-description">
+                        <p>Elegante e aromático, pode variar do seco ao doce. Traz notas de maçã verde, flores, mel e frutas cítricas. Harmoniza bem com comida asiática, pratos apimentados e sobremesas leves.</p>
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$800,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="'fa-solid fa-hearts"></i>
+                    </div>
+                    <img src="src/images/vinhabranco5.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Pinot Grigio
+                    </h3>
+                    
+                    <span class="dish-description">
+                        <p>Leve, frutado e fácil de beber. Apresenta sabores de pera, limão, maçã verde e flores brancas. Muito consumido no verão, combina bem com saladas, frutos-do-mar e queijos suaves.</p>
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$450,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="'fa-solid fa-hearts"></i>
+                    </div>
+                    <img src="src/images/vinhobranco1.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Gewürztraminer
+                    </h3>
+                    
+                    <span class="dish-description">
+                        <p>Intenso e exótico, destaca-se por aromas florais, lichia, melão, especiarias e um leve dulçor. Ideal para acompanhar pratos orientais, queijos fortes ou sobremesas com frutas tropicais e mel.</p>
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$900,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fim de seção menu -->
+
+        <!-- seção depoimentos -->
+        <section id="testimonials">
+            <img src="src/images/chefedevinho.png" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+            </div>
+
+            <div id="feedbacks">
+                <div class="feedback">
+                    <img src="src/" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- fim depoimentos -->
+    </main>
+    <!-- fim main -->
     <script src="src/js/script.js"></script>
+    <script src="src/js/site.js"></script>
 </body>
 </html>
+
